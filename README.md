@@ -1,43 +1,44 @@
 # ResearchMind AI
 
-A beginner-friendly, portfolio-ready multi-step research agent with:
+An autonomous AI research agent that:
 
-- FastAPI backend
-- React frontend
-- Live web search via DuckDuckGo
-- Page fetching and text extraction
-- Research planning, source ranking, confidence scoring, and citation-backed reporting
-- Free by default
+- Plans research tasks
+- Searches the web
+- Extracts information
+- Compares evidence
+- Detects contradictions
+- Generates reports
+- Provides confidence scores
 
-## What it does
+## Tech Stack
 
-1. Takes a topic/question from the user
-2. Splits it into research angles
-3. Searches the web
-4. Fetches and extracts the best source pages
-5. Produces a structured report with citations and a confidence score
-6. Shows progress in the UI so the workflow looks like a real agent
+- Python
+- FastAPI
+- React
+- DuckDuckGo Search
+- BeautifulSoup
 
-## Setup
+## Features
 
-### Backend
-```bash
-cd backend
-python -m venv .venv
-# activate the venv, then:
-pip install -r requirements.txt
-uvicorn main:app --reload --port 8000
-```
+- Multi-step AI workflow
+- Live web search
+- Source extraction
+- Evidence comparison
+- Citation-backed reporting
+- Confidence scoring
 
-### Frontend
-```bash
-cd frontend
-npm install
-npm run dev
-```
+## Architecture
 
-Open the frontend URL printed by Vite.
+User Query
+→ Research Planner
+→ Search Engine
+→ Source Analyzer
+→ Evidence Comparator
+→ Report Generator
 
+## Author
+
+Hriday Upadhyaya
 ## Notes
 
 - This MVP is free to run.
