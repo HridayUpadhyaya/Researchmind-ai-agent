@@ -1,8 +1,18 @@
 {
   "name": "researchmind-ai",
+  "version": "2.0.0",
   "private": true,
-  "version": "1.0.0",
   "type": "module",
+  "description": "Autonomous research agent with evidence extraction and confidence scoring.",
+  "author": "Hriday Upadhyaya",
+  "license": "MIT",
+  "keywords": [
+    "ai",
+    "research",
+    "agent",
+    "react",
+    "fastapi"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vite build",
