@@ -1,46 +1,33 @@
-# ResearchMind AI
+# 🧠 ResearchMind AI
 
-An autonomous AI research agent that:
+ResearchMind AI is a multi-step research agent built with Python, FastAPI and React.
 
-- Plans research tasks
-- Searches the web
-- Extracts information
-- Compares evidence
-- Detects contradictions
-- Generates reports
-- Provides confidence scores
+It plans a research task, searches the web, fetches accessible sources, extracts evidence, detects mixed signals and presents a structured report with a transparent confidence heuristic.
 
-## Tech Stack
+> This version is a rule-based research pipeline. It does not currently use an LLM to write the report.
 
-- Python
-- FastAPI
-- React
-- DuckDuckGo Search
-- BeautifulSoup
-
-## Features
-
-- Multi-step AI workflow
-- Live web search
-- Source extraction
-- Evidence comparison
-- Citation-backed reporting
-- Confidence scoring
+---
 
 ## Architecture
 
-User Query
-→ Research Planner
-→ Search Engine
-→ Source Analyzer
-→ Evidence Comparator
-→ Report Generator
-
-## Author
-
-Hriday Upadhyaya
-## Notes
-
-- This MVP is free to run.
-- It works best on clear, researchable questions.
-- Some websites block scraping; the app will skip those and continue.
+```text
+User
+  │
+  ▼
+React + Vite frontend
+  │
+  │ HTTP / JSON
+  ▼
+FastAPI backend
+  │
+  ├── Query Planner
+  ├── DuckDuckGo Search
+  ├── URL Deduplication
+  ├── Parallel Page Fetching
+  ├── HTML Text Extraction
+  ├── Fact Extraction
+  ├── Contradiction Detection
+  └── Confidence Calculation
+  │
+  ▼
+Structured JSON response
