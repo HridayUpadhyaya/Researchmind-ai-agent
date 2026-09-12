@@ -1,1 +1,1 @@
-
+"""ResearchMind AI agent package."""
